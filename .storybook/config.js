@@ -1,6 +1,8 @@
-import { configure, setAddon } from '@storybook/react';
-import JSXAddon from 'storybook-addon-jsx';
+import { configure, addParameters } from '@storybook/react';
+import { setConsoleOptions } from '@storybook/addon-console';
 
-setAddon(JSXAddon);
+setConsoleOptions({
+  panelExclude: [],
+});
 
 configure(() => require('./stories'), module);

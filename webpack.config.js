@@ -10,7 +10,7 @@ module.exports = {
         filename: 'custom-button.js',
         library: 'custom-button',
         libraryTarget: 'umd',
-        path: path.resolve(__dirname, '')
+        path: path.resolve(__dirname, 'dist')
     },
     module: {
         rules: [
@@ -44,6 +44,6 @@ module.exports = {
         minimizer: [new UglifyJsPlugin()]
     },
     plugins: [
-        new CleanWebpackPlugin([''])
+        new CleanWebpackPlugin(['dist'])
     ]
 }
