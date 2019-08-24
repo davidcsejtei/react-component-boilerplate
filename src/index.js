@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import '../style/button.scss';
+import '../style/component.scss';
 
-export default class CustomButton extends Component {
+export default class ExampleComponent extends Component {
 
     render() {
         return(
-            <button>Custom button</button>
+            <div>Example component</div>
         );
     }
 

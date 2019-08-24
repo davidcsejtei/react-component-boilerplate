@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf, setAddon } from '@storybook/react';
 
-import CustomButton from '../../src/index';
+import ExampleComponent from '../../src/index';
 
-storiesOf("Custom button", module).add("simple", () => <CustomButton />);
+storiesOf("", module).add("simple", () => <ExampleComponent />);
